@@ -1,0 +1,23 @@
+{
+  "name": "cs201r-jquery",
+  "version": "1.0.0",
+  "description": "CS 201R Jquery",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trentjones21/cs201r-jquery.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trentjones21/cs201r-jquery/issues"
+  },
+  "homepage": "https://github.com/trentjones21/cs201r-jquery#readme",
+  "dependencies": {
+    "express": "^4.14.1",
+    "websocket": "^1.0.24"
+  }
+}
