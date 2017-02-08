@@ -21,6 +21,7 @@ var wsServer = new webSocketServer({
 });
 
 wsServer.on('request', function(request) {
+    console.log('new request opened');
     var connection = request.accept(null, request.origin);
     var index = clients.push(connection) - 1;
     var userName = false;
@@ -31,6 +32,7 @@ wsServer.on('request', function(request) {
     }
 
     connection.on('message', function(message) {
+        console.log('message recieved', message);
         if (userName === false) {
             userName = message.utf8Data;
             userColor = colors.shift();
